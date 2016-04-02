@@ -1,0 +1,29 @@
+weather,probability,count
+From,rain,
+rain,38.88888888888889,21
+partly cloudy,24.074074074074073,13
+fine,11.11111111111111,6
+cloudy,25.925925925925924,14
+total,100,54
+,,
+From,cloudy,
+rain,19.0,19
+partly cloudy,33.0,33
+fine,12.0,12
+cloudy,36.0,36
+total,100,100
+,,
+From,partly cloudy,
+rain,10.655737704918032,13
+partly cloudy,35.24590163934426,43
+fine,29.508196721311474,36
+cloudy,24.59016393442623,30
+total,100,122
+,,
+From,fine,
+rain,1.1235955056179776,1
+partly cloudy,35.95505617977528,32
+fine,39.325842696629216,35
+cloudy,23.595505617977526,21
+total,100,89
+,,

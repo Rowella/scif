@@ -1,0 +1,4 @@
+
+https://docs.python.org/2/library/csv.html
+http://www.bom.gov.au/climate/dwo/IDCJDW2124.latest.shtml
+http://www.bom.gov.au/info/wwords

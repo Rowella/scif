@@ -1,0 +1,29 @@
+weather,probability,count
+From,rain,
+fine,28.57142857142857,2
+rain,42.857142857142854,3
+cloudy,28.57142857142857,2
+partly cloudy,0.0,0
+total,100,7
+,,
+From,cloudy,
+fine,30.0,3
+rain,40.0,4
+cloudy,20.0,2
+partly cloudy,10.0,1
+total,100,10
+,,
+From,partly cloudy,
+fine,20.0,1
+rain,0.0,0
+cloudy,60.0,3
+partly cloudy,20.0,1
+total,100,5
+,,
+From,fine,
+fine,37.5,3
+rain,0.0,0
+cloudy,37.5,3
+partly cloudy,25.0,2
+total,100,8
+,,
