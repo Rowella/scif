@@ -14,9 +14,9 @@ with open("weather.csv",'w') as file:
         
     for i in range(len(months)):
         days = months[i].split("\r\n")
-        days = days[10:]
+        days = days[10:] #Ingore the starting comments about who collected the data
         for j in range(len(days)):
-            days[j] = days[j][1:]
+            days[j] = days[j][1:] #Since the starting comments come on a column before the data, the first column has to be ignored
             print(days[j][1:])
         months[i] = "\r\n".join(days)
     file.write("\r\n".join(months))
