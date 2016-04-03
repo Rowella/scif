@@ -39,7 +39,7 @@ with open('categories.csv') as readFile:
         categoriesReader = list(categoriesReader)
         total = len(categoriesReader)
         for i,date in enumerate(categoriesReader):
-            if i < total-1:
+            if i < total-1 and i!=0:
                 otherDate = categoriesReader[i+1]
                 weather[date[1]][otherDate[1]] += 1
                 weather[date[1]]['total'] += 1
