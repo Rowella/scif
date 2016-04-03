@@ -8,7 +8,7 @@ def writeToFile(catDict, category, file):
     file.writerow({'weather': 'From', 'probability': category, 'count':''})
     total = catDict['total']
     for key in catDict.keys():
-        if key == 'total':
+        if key == 'total': #The total will be used at the end
             continue
         occurances = catDict[key]
         file.writerow({'weather':key, 'probability':occurances/total*100, 'count':occurances})
@@ -21,7 +21,7 @@ def printStats(catDict, category):
     total = catDict['total']
     print("Stats for {}:".format(category))
     for key in catDict.keys():
-        if key == 'total':
+        if key == 'total': #Total will be used at the end
             continue
         occurances = catDict[key]
         print("{}: {} total, {}%".format(key, occurances, occurances/total*100))
@@ -31,7 +31,7 @@ def printStats(catDict, category):
 for category in categories:
     weather[category] = {}
     for otherCat in categories:
-        weather[category][otherCat] = 0
+        weather[category][otherCat] = 0 #Initialising every relation
     weather[category]['total'] = 0
 
 with open('categories.csv') as readFile:
@@ -39,7 +39,7 @@ with open('categories.csv') as readFile:
         categoriesReader = list(categoriesReader)
         total = len(categoriesReader)
         for i,date in enumerate(categoriesReader):
-            if i < total-1 and i > 0:
+            if i < total-1:
                 otherDate = categoriesReader[i+1]
                 weather[date[1]][otherDate[1]] += 1
                 weather[date[1]]['total'] += 1
